@@ -54,10 +54,17 @@ const Contatos = () => {
 
     return(
         <>
-            <Grid container direction="row" xs={12}>
-                <TextField id="name" label="Nome" value={author} onChange={(event)=>{setAuthor(event.target.value)}} fullWidth/>
-                <TextField id="message" label="Mensagem" value={content} onChange={(event)=>{setContent(event.target.value)}} fullWidth/>
-            </Grid>
+            <div className='container mt-5'>
+                <h2 className='titulo'>Deixe sua mensagem!</h2>
+                <form className='col-md-4 offset-md-4'>
+                    <div className="form-group mt-2">
+                        <input type="text" className="form-control formulario" id="name" placeholder="Nome" value={author} onChange={(event)=>{setAuthor(event.target.value)}}/>
+                    </div>
+                    <div className="form-group mt-2">
+                        <textarea type="text" className="form-control formulario" id="message" placeholder="Mensagem" rows='3' value={content} onChange={(event)=>{setContent(event.target.value)}}/>
+                    </div>
+                </form>
+            </div>
 
             {validator && 
                 <div className="alert alert-warning alert-dismissible fade show mt-2" role="alert">
@@ -71,12 +78,13 @@ const Contatos = () => {
                     <strong>Mensagem foi enviada</strong>
                 </div>
             }
-
-            <Button onClick={sendMessage} className="mt-2" variant="contained" color="primary">
-                Enviar
-            </Button>
+            <div className='container'>
+                <button onClick={sendMessage} className="mt-2 col-md-4 offset-md-4 col-sm-12 col-12 botao border-0">
+                    Enviar
+                </button>
+            </div>
             
-            <div className='container-fluid mt-4'>
+            <div className='container-fluid mt-5'>
                 <div className='row'>
                         {message.map((content) => {
                             return(

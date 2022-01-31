@@ -9,11 +9,35 @@
 --maximum-blue-purple: #a6b2ebff;
 
 --celadon-blue: #1f7ea7ff;*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 .cartao {
-    background-color: #151e34ff;
+    background-color: #080c24ff;
     color: #a6b2ebff;
 }
 .cartao h5{
     color: white;
+}
+.botao {
+    border-radius: 10px;
+    background-color: #5500f0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 1.3em;
+}
+.botao:hover {
+    background-color: #080c24ff;
+    outline: 2px solid white;
+}
+.titulo {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.formulario {
+    border-radius: 10px;
 }
