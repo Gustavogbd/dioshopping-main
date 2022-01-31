@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Grid, Button, TextField } from '@material-ui/core/';
+import './contato.css';
 
 const Contatos = () => {
 
@@ -54,8 +55,8 @@ const Contatos = () => {
     return(
         <>
             <Grid container direction="row" xs={12}>
-                <TextField id="name" label="Name" value={author} onChange={(event)=>{setAuthor(event.target.value)}} fullWidth/>
-                <TextField id="message" label="Message" value={content} onChange={(event)=>{setContent(event.target.value)}} fullWidth/>
+                <TextField id="name" label="Nome" value={author} onChange={(event)=>{setAuthor(event.target.value)}} fullWidth/>
+                <TextField id="message" label="Mensagem" value={content} onChange={(event)=>{setContent(event.target.value)}} fullWidth/>
             </Grid>
 
             {validator && 
@@ -72,20 +73,26 @@ const Contatos = () => {
             }
 
             <Button onClick={sendMessage} className="mt-2" variant="contained" color="primary">
-                Sent
+                Enviar
             </Button>
-
-            {message.map((content) => {
-                return(
-                    <div className="card mt-2" key={content.id}>
-                        <div className="card-body">
-                            <h5 className="card-title">{content.email}</h5>
-                            <p className="card-text">{content.message}</p>
-                            <p className="card-text"><small className="text-muted">{content.created_at}</small></p>
-                        </div>
-                    </div>
-                )
-            } )}
+            
+            <div className='container-fluid mt-4'>
+                <div className='row'>
+                        {message.map((content) => {
+                            return(
+                                <div className='col-xm-4 col-md-6 mt-2'>
+                                    <div className="card cartao" key={content.id}>
+                                        <div className="card-body">
+                                            <h5 className="card-title">{content.email}</h5>
+                                            <p className="card-text">{content.message}</p>
+                                            <p className="card-text"><small className="text-muted">{content.created_at}</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        } )}
+                </div>
+            </div>
         </>
     )
 }

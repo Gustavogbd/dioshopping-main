@@ -1,0 +1,19 @@
+/*--oxford-blue: #080c24ff;
+
+--oxford-blue-2: #151e34ff;
+
+--blue-crayola: #3071e8ff;
+
+--white: #ffffffff;
+
+--maximum-blue-purple: #a6b2ebff;
+
+--celadon-blue: #1f7ea7ff;*/
+
+.cartao {
+    background-color: #151e34ff;
+    color: #a6b2ebff;
+}
+.cartao h5{
+    color: white;
+}
