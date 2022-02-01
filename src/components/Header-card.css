@@ -49,3 +49,45 @@ a:hover {
         margin-right: 30px;
     }
 }
+
+
+/*CARDS*/
+
+.caixa{
+    background-color: #141212;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.imgproduto {
+    margin-top: 20px;
+}
+.botaoadicionar {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #221f1f;
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    outline: 1px solid white;
+    
+}
+.botaoadicionar:hover {
+    background-color: black;
+}
+.nomecamisa {
+    margin-top: 10px;
+}
+.preco {
+    margin-bottom: 10px;
+}
+.roww {
+    height: 2px;
+    background-color: #1c1c1c;
+    width: 70%;
+    margin-bottom: 10px;
+}

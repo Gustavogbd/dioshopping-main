@@ -1,43 +1,32 @@
 import React from 'react';
-import { Paper, Grid, Typography, Button, makeStyles} from '@material-ui/core/';
 import { useSelector, useDispatch } from 'react-redux';
 import cartActions from './store/actions/cart';
-
-const useStyles = makeStyles((theme) => ({
-    paper: {
-      padding: theme.spacing(2),
-      textAlign: 'center'
-    },
-  }));
+import './Header-card.css';
 
 const Card = ({ product, children }) => {
     const cart = useSelector( state => state.cart.value )
     const dispatch = useDispatch();
-    const classes = useStyles();
 
     return(
-        <Grid item xs={3}>
-            <Paper className={classes.paper}>
-                <Grid container direction='column'>
-                    <Grid item>
-                    <img width="140px" src={product.image} alt={product.name_product}/>
-                    <Typography variant='h6'>
+        <div className='container mt-5'>
+            <div className='container caixa'>
+                    <img width="140px" src={product.image} alt={product.name_product} className='imgproduto'/>
+                    <h5 className='nomecamisa'>
                         {children}
-                    </Typography>
-                    <Typography variant='subtitle1'>
+                    </h5>
+                    <div className='roww'></div>
+                    <p className='preco'>
                         R$ {product.price.toFixed(2)}
-                    </Typography>
-                    </Grid>
+                    </p>
+                    <div className='roww'></div>
                 
-                <Button 
-                    variant="contained"
+                <button
                     onClick={()=>dispatch(cartActions.Add(cart, product))}
-                >
+                 className='botaoadicionar'>
                     Adicionar
-                </Button>
-                </Grid>
-            </Paper>
-        </Grid>
+                </button>
+            </div>
+        </div>
     )
 }
 
