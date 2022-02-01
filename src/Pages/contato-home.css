@@ -10,25 +10,26 @@
 
 --celadon-blue: #1f7ea7ff;*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
-
+/* PÁGINA DE CONTATO */
 .cartao {
-    background-color: #080c24ff;
-    color: #a6b2ebff;
+    background-color: #221f1f;
+    color: white;
 }
 .cartao h5{
     color: white;
 }
 .botao {
-    border-radius: 10px;
-    background-color: #5500f0;
+    border-radius: 5px;
+    background-color: black;
     text-decoration: none;
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     font-size: 1.3em;
+    outline: 1px solid white;
 }
 .botao:hover {
-    background-color: #080c24ff;
+    background-color: #242726;
     outline: 2px solid white;
 }
 .titulo {
@@ -39,5 +40,28 @@
     font-weight: 700;
 }
 .formulario {
+    border-radius: 5px;
+    
+}
+
+/*PÁGINA HOME*/
+
+.categorias {
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
     border-radius: 10px;
+}
+.title {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 2em;
+}
+.lista {
+    color: white;
+    font-weight: 100;
+}
+.linha {
+    height: 2px;
+    background-color: #1c1c1c;
 }

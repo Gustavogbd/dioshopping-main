@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Grid, Button, TextField } from '@material-ui/core/';
-import './contato.css';
+import './contato-home.css';
 
 const Contatos = () => {
 
@@ -55,7 +54,7 @@ const Contatos = () => {
     return(
         <>
             <div className='container mt-5'>
-                <h2 className='titulo'>Deixe sua mensagem!</h2>
+                <h2 className='titulo'>DEIXE SUA MENSAGEM</h2>
                 <form className='col-md-4 offset-md-4'>
                     <div className="form-group mt-2">
                         <input type="text" className="form-control formulario" id="name" placeholder="Nome" value={author} onChange={(event)=>{setAuthor(event.target.value)}}/>

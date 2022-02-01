@@ -4,7 +4,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 .principal {
-    color: #a6b2ebff;
+    color: white;
 }
 .navwrapper {
     margin-top: 10px;
@@ -33,10 +33,10 @@ nav {
 
 a {
     text-decoration: none;
-    color: #a6b2ebff;
+    color: white;
 }
 a:hover {
-    color: white;
+    color: #2a1f15;
 }
 @media (max-width: 800px) {
     .navwrapper {
