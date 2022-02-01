@@ -61,6 +61,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    text-align: center;
 }
 .imgproduto {
     margin-top: 20px;
