@@ -3,20 +3,9 @@ import { useSelector } from 'react-redux';
 import { makeStyles } from '@material-ui/core/';
 import Card from '../components/Card';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-      marginTop: '5px',
-    },
-    paper: {
-      padding: theme.spacing(2),
-      textAlign: 'center'
-    },
-  }));
 
 const HomePage = () => {
     const products = useSelector(state => state.products)
-    const classes = useStyles();
 
     const categorys = products.map(
         category => {
@@ -48,12 +37,13 @@ const HomePage = () => {
 
 
         <div className='container-fluid'>
+
             <div className='container'>
             <div className='linha'></div>
                 <div className='row'>
                     <div className='col-12 categorias mt-3'>
                         <h2 className='title'>CATEGORIAS</h2>
-                        <ul className='lista'>
+                        <ul className='lista2'>
                             {category.map(
                                 category => {
                                     return (
