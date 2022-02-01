@@ -2,6 +2,9 @@
 
 Esse projeto foi feito durante o BootCamp Inter FrontEnd Developer
 
+<img src="public/images/dioshopping.png"/>
+<img src="public/images/diocoments.png"/>
+
 ## Requisitos
 
 Para que o projeto funcione, é necessário que o app seja iniciado na porta 3000 e a API da loja na porta 5000.
@@ -9,7 +12,9 @@ Para que o projeto funcione, é necessário que o app seja iniciado na porta 300
 [Link para o Repositório da API](https://github.com/Gustavogbd/api-dioshopping) 
 
 ### Status do Projeto
-O projeto se encontra em desenvolvimento, apenas a página de contatos e o header foram estilizados.
+Projeto finalizado, trabalhando no deploy da aplicação.
+
+
 
 ### `npm start`
 
